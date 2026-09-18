@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ChatNest - Chat Application</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo-area">
+            <div class="logo">💬</div>
+            <div>
+                <h1>ChatNest</h1>
+                <p>Connect & Chat</p>
+            </div>
+        </div>
+
+        <!-- USER PROFILE -->
+        <div class="profile">
+            <div class="avatar my-avatar">P</div>
+
+            <div class="profile-info">
+                <h3>Prabha</h3>
+                <span>🟢 Online</span>
+            </div>
+
+            <button id="themeBtn">🌙</button>
+        </div>
+
+        <!-- SEARCH -->
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search chats..."
+            >
+        </div>
+
+        <!-- CHAT TITLE -->
+        <div class="chat-title">
+            <span>Recent Chats</span>
+
+            <button id="newChatBtn">＋</button>
+        </div>
+
+        <!-- CHAT LIST -->
+        <div id="chatList" class="chat-list"></div>
+
+    </aside>
+
+
+    <!-- RIGHT CHAT AREA -->
+    <main class="chat-area">
+
+        <!-- HEADER -->
+        <header class="chat-header">
+
+            <div class="contact">
+
+                <div id="headerAvatar" class="avatar">
+                    A
+                </div>
+
+                <div>
+                    <h2 id="headerName">Aarav</h2>
+
+                    <span id="headerStatus">
+                        🟢 Online
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="header-buttons">
+
+                <button id="searchBtn">
+                    🔍
+                </button>
+
+                <button id="moreBtn">
+                    ⋮
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- MESSAGES -->
+        <div id="messageArea" class="message-area">
+
+        </div>
+
+
+        <!-- TYPING -->
+        <div id="typing" class="typing">
+            ChatNest Bot is typing...
+        </div>
+
+
+        <!-- MESSAGE INPUT -->
+        <form id="messageForm" class="message-form">
+
+            <button
+                type="button"
+                id="emojiBtn"
+                class="icon-btn"
+            >
+                😊
+            </button>
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Type a message..."
+                autocomplete="off"
+            >
+
+            <label class="attach-btn">
+                📎
+                <input
+                    type="file"
+                    id="fileInput"
+                    hidden
+                >
+            </label>
+
+            <button
+                type="submit"
+                class="send-btn"
+            >
+                Send ➤
+            </button>
+
+        </form>
+
+
+        <!-- EMOJI PANEL -->
+        <div id="emojiPanel" class="emoji-panel">
+            😀 😂 😍 😊 😎
+            👍 ❤️ 🎉 🔥 👋
+            🙏 😄 🤗 😁 ✨
+        </div>
+
+    </main>
+
+</div>
+
+
+<!-- TOAST MESSAGE -->
+<div id="toast" class="toast"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
