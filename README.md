@@ -69,7 +69,7 @@ Using VS Code
 Add your project screenshot below:
 
 markdown
-![ChatNest Home Page](screenshots/chatnest-home.png)
+![ChatNest Home Page](C:\Users\ELCOT\OneDrive\D\chatnest\screenshot\Screenshot .home.png.png)
 
 
 Example folder structure for screenshots:
